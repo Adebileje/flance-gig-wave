@@ -7,23 +7,23 @@ import Sponsors from '../pages/Sponsors';
 import Faqs from '../pages/Faqs';
 import { Routes, Route } from "react-router-dom";
 import GetInTouch from '../pages/GetInTouch';
+import Layout from '../pages/Layout';
 
 function App() {
-  const link = "http://www.google.com";
 
   return (
     
-    <> 
-    <Navbar />
+    <>
     <Routes>
-        <Route index element={<Home />} />
-        <Route path='home'  element={<Home />} />
-        <Route path='about'  element={<About />} />
-        <Route path='speakers'  element={<Speakers />} />
-        <Route path='sponsors'  element={<Sponsors />} />
-        <Route path='faqs'  element={<Faqs />} />
-        <Route path='getInTouch'  element={<GetInTouch />} />
- </Routes>
+    <Route path='/'  element={<Home />} />
+        <Route element={<Layout />} >
+          <Route path='/about'  element={<About />} />
+          <Route path='/speakers'  element={<Speakers />} />
+          <Route path='/sponsors'  element={<Sponsors />} />
+          <Route path='/faqs'  element={<Faqs />} />
+          <Route path='/getInTouch'  element={<GetInTouch />} />
+        </Route>
+    </Routes>
 
     </>
   )

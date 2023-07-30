@@ -32,12 +32,12 @@ const Navbar = () => {
                 </div>
 
             <div className="links">
-                <Link to="/">HOME</Link>
-                <Link to="/about">ABOUT</Link>
-                <Link to="/speakers">SPEAKERS</Link>
-                <Link to="/sponsors">SPONSORS</Link>
-                <Link to="/faqs">FAQS</Link>
-                <Link to="/getInTouch">GET IN TOUCH</Link>
+                <Link to="/" onClick={() => setOpenToggle(!openToggle)} >HOME</Link>
+                <Link to="/about" onClick={() => setOpenToggle(!openToggle)} >ABOUT</Link>
+                <Link to="/speakers" onClick={() => setOpenToggle(!openToggle)} >SPEAKERS</Link>
+                <Link to="/sponsors" onClick={() => setOpenToggle(!openToggle)} >SPONSORS</Link>
+                <Link to="/faqs" onClick={() => setOpenToggle(!openToggle)} >FAQS</Link>
+                <Link to="/getInTouch" onClick={() => setOpenToggle(!openToggle)} >GET IN TOUCH</Link>
             <div>
                     <img src={Linetwo} alt="" />
                 </div>

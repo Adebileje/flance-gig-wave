@@ -1,5 +1,7 @@
 import React from 'react'
 import StraightLine from './assets/StraightLine.svg';
+import Footer from '../pages/Footer';
+import { Link } from 'react-router-dom';
 
 const GetInTouch = () => {
     return ( 
@@ -11,8 +13,11 @@ const GetInTouch = () => {
           <img src={StraightLine} alt="" />
       </div>
       <p className='moreInfo'>
-      For more information about sponsorship opportunities or to discuss a customized<br />sponsorship package, please send an email to; v@flanceapp.com.
+      For more information about sponsorship opportunities or to discuss a customized<br />sponsorship package, please send an email to; <Link>v@flanceapp.com.</Link>
       </p>
+      <div className="footer">
+          <Footer />
+      </div>
         </div>
      );
 }

@@ -3,6 +3,7 @@ import StraightLine from './assets/StraightLine.svg';
 import Axamansard from './assets/Axamansard.svg';
 import mtn from './assets/mtn.svg';
 import Bolt from './assets/Bolt.svg';
+import Footer from '../pages/Footer';
 
 const Sponsors = () => {
     return ( 
@@ -33,6 +34,9 @@ const Sponsors = () => {
         <img src={mtn} alt="" />
         <img src={Bolt} alt="" />
         <img src={mtn} alt="" />
+      </div>
+      <div className="footer">
+          <Footer />
       </div>
         </div>
      );

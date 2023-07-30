@@ -3,11 +3,13 @@ import logo from './assets/logo.svg';
 import Line from './assets/Line.svg';
 import Linetwo from './assets/Linetwo.svg';
 import About from '../pages/About';
+import Footer from '../pages/Footer';
 import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className='box'>
+    <div className="">
+        <div className='box'>
             <div className="box-left">
             <nav className="navbar">
             <ul>
@@ -16,6 +18,7 @@ const Home = () => {
                         <img src={logo} alt="" />
                     </div>
                 </Link>
+                <div className="homenavv">
                 <div>
                     <img src={Linetwo} alt="" />
                 </div>
@@ -28,6 +31,7 @@ const Home = () => {
                 <Link to="/getInTouch">GET IN TOUCH</Link>
             <div>
                     <img src={Linetwo} alt="" />
+                </div>
                 </div>
                 </div>
 
@@ -60,6 +64,10 @@ const Home = () => {
                 </div>
             </div>
         </div>
+        <div className="homeFooter">
+        <Footer />
+        </div>
+    </div>
   )
 }
 
