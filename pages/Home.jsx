@@ -13,30 +13,31 @@ const Home = () => {
             <div className="box-left">
             <nav className="navbar">
             <ul>
+            <div className="homenavv">
                 <Link to="/">
                 <div className="headerImg">
                         <img src={logo} alt="" />
                     </div>
                 </Link>
-                <div className="homenavv">
-                <div>
-                    <img src={Linetwo} alt="" />
+    
+                        <div>
+                            <img src={Linetwo} alt="" />
+                        </div>
+
+                    <div className="links">
+                        <Link to="/about">ABOUT</Link>
+                        <Link to="/speakers">SPEAKERS</Link>
+                        <Link to="/sponsors">SPONSORS</Link>
+                        <Link to="/faqs">FAQS</Link>
+                        <Link to="/getInTouch">GET IN TOUCH</Link>
+                    <div>
+                            <img src={Linetwo} alt="" />
+                        </div>
+                        </div>
                 </div>
 
-            <div className="links">
-                <Link to="/about">ABOUT</Link>
-                <Link to="/speakers">SPEAKERS</Link>
-                <Link to="/sponsors">SPONSORS</Link>
-                <Link to="/faqs">FAQS</Link>
-                <Link to="/getInTouch">GET IN TOUCH</Link>
-            <div>
-                    <img src={Linetwo} alt="" />
-                </div>
-                </div>
-                </div>
-
-            </ul>
-        </nav>
+                    </ul>
+                </nav>
             </div>
 
             <div className="box-right">
