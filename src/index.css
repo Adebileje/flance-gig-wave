@@ -20,15 +20,26 @@ body {
   overflow-x: hidden;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .box {
     width: 100vw;
     height: 100vh;
     padding: 4rem 0 2rem;
   }
 
+  .header{
+    display: none;
+  }
+
   .homenavv{
     display: none;
+  }
+
+  .mobile-navbar{
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .box-right{
@@ -107,7 +118,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {
 .box {
   width: 100vw;
   height: 100vh;
@@ -400,15 +411,15 @@ left: 120.00000000000003px;
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  transition: all .3s ease;
 }
 
-.speakersInfo img:hover {
+.speakers:hover{
   transform: scale(0.9);
 }
 
 .speakers{
   position: relative;
+  transition: all .3s ease;
 }
 
 .speakersName{
@@ -533,4 +544,10 @@ left: 120.00000000000003px;
   margin-top: 3rem;
 }
 
+}
+
+@media screen and (min-width: 769px) {
+  .mobile-navbar{
+    display: none;
+  }
 }

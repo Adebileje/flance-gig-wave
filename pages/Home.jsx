@@ -4,6 +4,7 @@ import Line from './assets/Line.svg';
 import Linetwo from './assets/Linetwo.svg';
 import About from '../pages/About';
 import Footer from '../pages/Footer';
+import Navbar from '../pages/Navbar';
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -38,6 +39,10 @@ const Home = () => {
 
                     </ul>
                 </nav>
+            </div>
+
+            <div className='mobile-navbar'>
+                <Navbar />
             </div>
 
             <div className="box-right">
