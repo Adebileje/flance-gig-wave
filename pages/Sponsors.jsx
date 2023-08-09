@@ -15,10 +15,11 @@ const Sponsors = () => {
           <img src={StraightLine} alt="" />
       </div>
       <div className="speakersLogo">
-        <img src={Axamansard} alt="" />
-        <img src={mtn} alt="" />
-        <img src={Bolt} alt="" />
-        <img src={mtn} alt="" />
+        
+            <img src={Axamansard} alt="" />
+            <img src={mtn} alt="" />
+            <img src={Bolt} alt="" />
+            <img src={mtn} alt="" />
 
         <img src={Axamansard} alt="" />
         <img src={mtn} alt="" />

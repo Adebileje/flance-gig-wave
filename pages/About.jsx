@@ -9,6 +9,7 @@ const About = () => {
     return (
         <div>
             <div className="box">
+                
         <div className="aboutpage">
                 <div className="main">
                     <h2>We are connecting Africa's gig economy.</h2>
@@ -36,6 +37,7 @@ const About = () => {
                     <div className="paratext2">
                     GigWave Lagos is a must-attend event for anyone looking to grow their skills, expand their<br />network, stay ahead of the curve in the world of independent work, and for stakeholders<br />looking to connect with the pulse of the gig economy in Nigeria and Africa.
                     </div>
+                    
                     <div className="footer">
                         <Footer />
                     </div>

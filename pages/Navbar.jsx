@@ -62,9 +62,11 @@ const Navbar = () => {
         )}
       </div>
       <div className="mobile-navbar">
+        <div className="gig-logo">
         <Link to="/">
           <img src={logo} alt="" />
         </Link>
+        </div>
         <div className="container" onClick={() => setOpenToggle(!openToggle)}>
           <div className="" onClick={() => setOpenToggle(!openToggle)}>
             {openToggle ? (

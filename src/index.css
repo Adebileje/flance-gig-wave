@@ -24,7 +24,7 @@ body {
   .box {
     width: 100vw;
     height: 100vh;
-    padding: 4rem 0 2rem;
+    padding: 2rem 0 2rem;
   }
 
   .header{
@@ -36,10 +36,19 @@ body {
   }
 
   .mobile-navbar{
-    margin-left: 0.5rem;
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+  }
+
+  .mobile-navbar .gig-logo{
+    margin-left: -1rem;
+  }
+
+  .mobile-navbar .container{
+    margin-left: 4rem;
   }
 
   .box-right{
@@ -50,7 +59,7 @@ body {
   .box-right .big-text{
     color: var(--white, #FFF);
     font-family: Ovo;
-    font-size: 24px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 400;
     line-height: 48px; /* 100% */
@@ -113,8 +122,254 @@ body {
     text-transform: uppercase;
   }
 
+  .sidebar{
+    width: 100%;
+    height: 100vh;
+    background-color: #211351;
+    position: fixed;
+    top: 140px;
+    left: 60px;
+    z-index: 3;
+    padding: 2rem 0 0;
+  }
+  
+  .links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .links a {
+    margin: 1rem 0;
+    color: #FFE1F7;
+    font-family: Poppins;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+  }
+
+  .aboutpage{
+    margin: 0 1rem;
+  }
+  
+  .main {
+    color: var(--white, #FFF);
+    font-family: Ovo;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.96px;
+  }
+  
+  .main .straightline{
+    margin-bottom: 1rem;
+  }
+  
+  .text-main{
+    color: var(--white, #FFF);
+    font-family: Ovo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 22.5px */
+    letter-spacing: 0.72px;
+  }
+  
+  .images{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+  }
+  
+  .images .boxes{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .round{
+    border-radius: 24px;
+  }
+  
+
+  .paratexts{
+    color: var(--white, #FFF);
+    font-family: Ovo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 22.5px */
+    letter-spacing: 0.72px;
+  }
+  
+  .paratext2{
+    margin: 1.5rem 0;
+  }
+  
+  .speakersPage{
+    margin: 0 1rem;
+  }
+  
+  .meetSpeakerstxt{
+    color: var(--white, #FFF);
+    font-family: Ovo;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.96px;
+  }
+  
+  .straightline2{
+    margin-bottom: 2rem;
+  }
+  
+  .speakersInfo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  
+  .speakersInfo img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  
+  .speakers:hover{
+    transform: scale(0.9);
+  }
+  
+  .speakers{
+    position: relative;
+    transition: all .3s ease;
+  }
+  
+  .speakersName{
+    color: #E3D1FF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    padding: 10px 0;
+  }
+  
+  .speakersContent{
+    color: var(--white, #FFF);
+    font-family: Ovo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.72px;
+  }
+  
+  .icons-container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    border-radius: 0 0 20px 20px;
+    background: linear-gradient(137deg, rgba(33, 19, 81, 0.92) 0%, rgba(33, 19, 81, 0.15) 100%), linear-gradient(137deg, #FFF 0%, rgba(255, 255, 255, 0.22) 100%), rgba(213, 126, 235, 0.20);
+  
+  }
+  
+  .speaker-icon{
+    width: 8% !important;
+    border-radius: 50%;
+    position: relative;
+    background-color: #ffff;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .speaker-icon:first-child{
+    margin-left: 2rem;
+  }
+
+  .sponsorsPage{
+    margin: 0 1rem;
+  }
+  
+  .speakersLogo{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .faq-container{
+    width: 100%;
+    border-radius: 24px;
+    opacity: 1;
+    background: radial-gradient(661.41% 313.21% at 38.28% 50.55%, #211351 0%, rgba(255, 255, 255, 0.604) 100%), #211351;
+    backdrop-filter: blur(50px);
+    padding: 1rem 0;
+    margin: 0 0 1.5rem;
+  }
+  
+  .faq-content-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+  .faq-content-title{
+    color: #E3D1FF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+  }
+  
+  .faq-content-text{
+    width: 95%;
+    margin: 0.5rem auto;
+  }
+  
+  .faq-content-text p {
+    color: var(--white, #FFF);
+    font-family: Ovo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.96px;
+  }
+  
+  .moreInfo{
+    color: var(--white, #FFF);
+    font-family: Ovo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 22.5px */
+    letter-spacing: 0.72px;
+  }
+
   .homeFooter{
     margin: 0 1rem;
+  }
+
+  .footer{
+    margin-top: 3rem;
   }
 }
 
@@ -483,16 +738,6 @@ left: 120.00000000000003px;
   gap: 1rem;
 }
 
-.moreInfo{
-  color: var(--white, #FFF);
-  font-family: Ovo;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 125%; /* 30px */
-  letter-spacing: 0.96px;
-}
-
 .faq-container{
   width: 65%;
   border-radius: 24px;
@@ -533,6 +778,16 @@ left: 120.00000000000003px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  letter-spacing: 0.96px;
+}
+
+.moreInfo{
+  color: var(--white, #FFF);
+  font-family: Ovo;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%; /* 30px */
   letter-spacing: 0.96px;
 }
 
