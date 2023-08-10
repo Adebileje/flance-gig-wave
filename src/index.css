@@ -22,9 +22,10 @@ body {
 
 @media screen and (max-width: 768px) {
   .box {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     padding: 2rem 0 2rem;
+    overflow-x: hidden;
   }
 
   .header{
@@ -35,12 +36,16 @@ body {
     display: none;
   }
 
+  .home-mobile-navbar{
+    margin: -1.5rem 0 0;
+  }
+
   .mobile-navbar{
     width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
   }
 
   .mobile-navbar .gig-logo{
@@ -71,9 +76,33 @@ body {
     margin-bottom: 1rem;
   }
   
+  .img1{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img1 img{
+    width: 98%;
+  }
+
   .box-right .img2{
     margin-top: 2rem;
     margin-bottom: 1rem;
+  }
+
+  .img2{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img2 img{
+    width: 98%;
   }
   
   .box-right .para-text{
@@ -92,7 +121,7 @@ body {
   }
   
   .box-right .btn1{
-    width: 283px;
+    width: 329px;
     height: 76px;
     flex-shrink: 0;
     border-radius: 8px;
@@ -111,6 +140,7 @@ body {
   }
   
   .box-right .btn2 .reg-test .button{
+    width: 230px;
     color: var(--white, #FFF);
     text-align: center;
     font-family: Poppins;
@@ -123,12 +153,11 @@ body {
   }
 
   .sidebar{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: #211351;
     position: fixed;
-    top: 140px;
-    left: 60px;
+    left: 10px;
     z-index: 3;
     padding: 2rem 0 0;
   }
@@ -143,22 +172,23 @@ body {
     margin: 1rem 0;
     color: #FFE1F7;
     font-family: Poppins;
-    font-size: 38px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 0.96px;
+    letter-spacing: 0.8px;
     text-transform: uppercase;
   }
 
   .aboutpage{
     margin: 0 1rem;
+    overflow-x: hidden;
   }
   
   .main {
     color: var(--white, #FFF);
     font-family: Ovo;
-    font-size: 38px;
+    font-size: 34px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -168,7 +198,7 @@ body {
   .main .straightline{
     margin-bottom: 1rem;
   }
-  
+
   .text-main{
     color: var(--white, #FFF);
     font-family: Ovo;
@@ -183,16 +213,31 @@ body {
     display: flex;
     flex-direction: column;
     margin: 2rem 0;
+    width: 100%;
   }
   
   .images .boxes{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    width: 100%;
+    gap: 5px;
   }
   
   .round{
     border-radius: 24px;
+  }
+
+  .mainimg1 img{
+    width: 100%;
+  }
+  
+  .mainimg2 img{
+    width: 100%;
+  }
+  
+  .mainimg3 img{
+    width: 100%;
   }
   
 
@@ -212,6 +257,7 @@ body {
   
   .speakersPage{
     margin: 0 1rem;
+    overflow-x: hidden;
   }
   
   .meetSpeakerstxt{
@@ -302,6 +348,7 @@ body {
 
   .sponsorsPage{
     margin: 0 1rem;
+    overflow-x: hidden;
   }
   
   .speakersLogo{
@@ -309,6 +356,11 @@ body {
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 1rem;
+    width: 100%;
+  }
+
+  .speakersLogo img{ 
+    width: 47%;
   }
 
   .faq-container{
@@ -802,7 +854,12 @@ left: 120.00000000000003px;
 }
 
 @media screen and (min-width: 769px) {
+  .home-mobile-navbar{
+    display: none;
+  }
+
   .mobile-navbar{
     display: none;
   }
+
 }

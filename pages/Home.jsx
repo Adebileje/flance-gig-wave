@@ -41,7 +41,7 @@ const Home = () => {
                 </nav>
             </div>
 
-            <div className='mobile-navbar'>
+            <div className='home-mobile-navbar'>
                 <Navbar />
             </div>
 
