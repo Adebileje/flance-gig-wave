@@ -287,10 +287,6 @@ body {
     object-fit: cover;
   }
   
-  .speakers:hover{
-    transform: scale(0.9);
-  }
-  
   .speakers{
     position: relative;
     transition: all .3s ease;
