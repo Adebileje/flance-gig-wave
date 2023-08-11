@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import logo from "./assets/logo.svg";
 import Linetwo from "./assets/Linetwo.svg";
 import { Link } from "react-router-dom";
-import { VscThreeBars, VscChromeClose } from "react-icons/vsc";
+import { VscMenu, VscChromeClose } from "react-icons/vsc";
 
 const Navbar = () => {
   const [openToggle, setOpenToggle] = useState(false);
@@ -24,7 +24,7 @@ const Navbar = () => {
               {openToggle ? (
                 <VscChromeClose size={30} />
               ) : (
-                <VscThreeBars size={30} />
+                <VscMenu size={30} />
               )}
             </div>
           </div>
@@ -72,7 +72,7 @@ const Navbar = () => {
             {openToggle ? (
               <VscChromeClose size={30} />
             ) : (
-              <VscThreeBars size={30} />
+              <VscMenu size={30} />
             )}
           </div>
         </div>
